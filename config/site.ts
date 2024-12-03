@@ -1,69 +1,45 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: 'Image Compressor',
+  description: 'Fast and easy way to compress your images without losing quality.',
   navItems: [
     {
-      label: "Home",
-      href: "/",
+      label: 'Главная',
+      href: '/',
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: 'Помощь',
+      href: '/help',
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: 'Связаться с нами',
+      href: '/contact-us',
     },
     {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: 'Инструкция',
+      href: '/instruction',
     },
   ],
-  navMenuItems: [
+  navItemsMobile: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: 'Главная',
+      href: '/',
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: 'Помощь',
+      href: '/help',
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: 'Связаться с нами',
+      href: '/contact-us',
     },
     {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: 'Инструкция',
+      href: '/instruction',
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    sponsor: 'https://google.com/',
   },
 };
