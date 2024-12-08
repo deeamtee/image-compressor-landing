@@ -16,7 +16,7 @@ import clsx from 'clsx';
 
 import { siteConfig } from '@/config/site';
 import { ThemeSwitch } from '@/components/theme-switch';
-import { GithubIcon, Logo, ChromeIcon } from '@/components/icons';
+import { GithubIcon, ChromeIcon } from '@/components/icons';
 
 export const Navbar = () => {
   return (
@@ -24,9 +24,8 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
-            <span className="font-bold text-inherit">Image</span>
-            <span className="font-bold text-inherit">Compressor</span>
+            <span className="font-bold text-black">Image</span>
+            <span className="font-bold text-primary">Compressor</span>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">

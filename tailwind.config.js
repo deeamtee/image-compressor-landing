@@ -14,6 +14,10 @@ module.exports = {
         mono: ['var(--font-mono)', 'Courier', 'monospace'], 
         chinese: ['var(--font-chinese)', 'Noto Sans SC', 'sans-serif'], 
       },
+      colors: {
+        primary: '#00A3F4',
+        black: '#0D1415',
+      }
     },
   },
   darkMode: 'class',
