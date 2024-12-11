@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router";
+import { Navigate, Route, Routes, useLocation } from "react-router";
 import Header from "./components/Header/Header";
 import Brief from "./components/Brief/Brief";
 import Help from "./components/Help/Help";
@@ -30,6 +30,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/instructions" element={<Instructions />} />
           <Route path="/sorry" element={<Sorry />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
         <Footer isMainPage={isMainPage} />
       </div>
