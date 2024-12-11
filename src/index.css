@@ -25,7 +25,9 @@
   --grey-color: #e7e8e8;
   --white-color: #fafafa;
 }
-
+body {
+  line-height: 1.4;
+}
 a,
 a:hover {
   color: #0d1415;

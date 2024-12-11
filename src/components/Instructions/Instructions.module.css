@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   top: 90px;
-  right: 0;
+  right: -90px;
   width: 174.11px;
   height: 175.98px;
   background-image: url("../../assets/images/arrow-right.svg");
@@ -26,8 +26,8 @@
 .instructions__container::after {
   content: "";
   position: absolute;
-  top: 53%;
-  left: 50px;
+  bottom: 38%;
+  left: -45px;
   width: 156px;
   height: 154px;
   background-image: url("../../assets/images/arrow-left.svg");
@@ -50,7 +50,6 @@
 .instructions__text {
   font-size: 40px;
   font-weight: 400;
-  line-height: 1.4;
 }
 
 .instructions__item {
@@ -65,7 +64,7 @@
 }
 
 .instructions__item-title {
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -75,7 +74,8 @@
 }
 
 .instructions__item-image {
-  max-width: 100%;
+  max-width: 848px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
