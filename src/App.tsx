@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes, useLocation } from "react-router";
+import { Navigate, Route, Routes } from "react-router";
 import Header from "./components/Header/Header";
 import Brief from "./components/Brief/Brief";
 import Help from "./components/Help/Help";
@@ -6,21 +6,39 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Instructions from "./components/Instructions/Instructions";
 import Footer from "./components/Footer/Footer";
 import Scrollbars from "rc-scrollbars";
-import styles from "./App.module.css";
 import Sorry from "./components/Sorry/Sorry";
+import { useEffect, useState } from "react";
 
 function App() {
-  const location = useLocation();
+  const [isScrolling, setIsScrolling] = useState(false);
 
-  const isMainPage = location.pathname === "/home";
+  useEffect(() => {
+    if (isScrolling) {
+      const timeout = setTimeout(() => setIsScrolling(false), 1000); // Скрыть через 1 секунду бездействия
+      return () => clearTimeout(timeout);
+    }
+  }, [isScrolling]);
+
+  const handleScroll = () => {
+    setIsScrolling(true);
+  };
 
   return (
     <Scrollbars
       style={{ height: "100vh" }}
-      classes={{
-        trackVertical: styles.trackVertical,
-        thumbVertical: styles.thumbVertical,
-      }}
+      onScroll={handleScroll}
+      renderThumbVertical={({ style, ...props }) => (
+        <div
+          {...props}
+          style={{
+            ...style,
+            backgroundColor: "gray",
+            opacity: isScrolling ? 1 : 0,
+            transition: "opacity 0.3s ease",
+            borderRadius: "4px",
+          }}
+        />
+      )}
     >
       <div className="App">
         <Header />
@@ -32,7 +50,7 @@ function App() {
           <Route path="/sorry" element={<Sorry />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
-        <Footer isMainPage={isMainPage} />
+        <Footer />
       </div>
     </Scrollbars>
   );

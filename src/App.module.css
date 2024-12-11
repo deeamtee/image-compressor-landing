@@ -4,7 +4,7 @@
 }
 
 .thumbVertical {
-  background-color: var(--accent-color) !important;
+  background-color: var(--secondary-color) !important;
   border-radius: 2px !important;
   width: 5px !important;
 }

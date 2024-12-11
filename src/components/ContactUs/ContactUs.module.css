@@ -1,6 +1,7 @@
 .contact-us {
   margin-bottom: 123px;
-  padding-top: 40px;
+  padding-top: 170px;
+  width: 100%;
 }
 
 .contact-us__container {
@@ -27,7 +28,7 @@
 
 @media screen and (max-width: 768px) {
   .contact-us {
-    padding-top: 24px;
+    padding-top: 124px;
   }
 }
 

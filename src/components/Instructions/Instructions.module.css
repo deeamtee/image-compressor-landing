@@ -1,5 +1,5 @@
 .instructions {
-  padding-top: 40px;
+  padding-top: 170px;
   margin-bottom: 110px;
 }
 
@@ -86,7 +86,7 @@
 
 @media screen and (max-width: 768px) {
   .instructions {
-    padding-top: 24px;
+    padding-top: 124px;
   }
 
   .instructions__title {

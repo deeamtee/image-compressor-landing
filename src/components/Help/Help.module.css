@@ -1,5 +1,5 @@
 .help {
-  padding-top: 40px;
+  padding-top: 170px;
   margin-bottom: 123px;
 }
 
@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 768px) {
   .help {
-    padding-top: 24px;
+    padding-top: 124px;
   }
 
   .help__item-title {

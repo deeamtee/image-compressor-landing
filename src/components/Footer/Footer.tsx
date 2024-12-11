@@ -4,9 +4,14 @@ import InstallButtonAdditional from "../InstallButtonAdditional/InstallButtonAdd
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import styles from "./Footer.module.css";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
-const Footer = ({ isMainPage }: { isMainPage: boolean }) => {
+const Footer = () => {
   const { t } = useTranslation();
+  const location = useLocation();
+
+  const isMainPage = location.pathname === "/home";
+
   return (
     <footer
       id="footer"

@@ -3,6 +3,7 @@
   background-color: var(--primary-color);
   color: var(--white-color);
   display: none;
+  width: 100%;
 }
 
 .footer.visible {
