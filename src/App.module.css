@@ -1,0 +1,10 @@
+.trackVertical {
+  border-radius: 2px !important;
+  width: 5px !important;
+}
+
+.thumbVertical {
+  background-color: var(--accent-color) !important;
+  border-radius: 2px !important;
+  width: 5px !important;
+}

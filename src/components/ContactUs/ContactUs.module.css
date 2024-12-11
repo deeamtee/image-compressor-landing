@@ -1,0 +1,42 @@
+.contact-us {
+  margin-bottom: 123px;
+  padding-top: 40px;
+}
+
+.contact-us__container {
+}
+
+.contact-us__item {
+  padding: 40px;
+  background-color: #ccedfd;
+  border-radius: 10px;
+}
+
+.contact-us__item-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-us__item-text-accent {
+  color: var(--accent-color);
+}
+
+.contact-us__item-text-accent:hover {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us__item {
+    padding: 24px;
+  }
+
+  .contact-us__item-text {
+    font-size: 14px;
+  }
+}

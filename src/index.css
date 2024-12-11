@@ -1,0 +1,58 @@
+@import url("./assets/fonts/fonts.css");
+@import url("./vendor/normalize.css");
+@import url("./vendor/reset.css");
+
+:root {
+  font-family: "Montserrat", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  font-weight: 600;
+
+  color-scheme: light dark;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* variables */
+  --accent-color: #00a3f4;
+  --primary-color: #0d1415;
+  --secondary-color: rgba(13, 20, 21, 0.35);
+  --tertiary-color: rgba(13, 20, 21, 0.5);
+  --grey-color: #e7e8e8;
+  --white-color: #fafafa;
+}
+
+a,
+a:hover {
+  color: #0d1415;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 24px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 512px) {
+  [class*="__container"] {
+    padding: 0 16px;
+  }
+}

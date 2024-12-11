@@ -1,0 +1,142 @@
+.header {
+  position: relative;
+  z-index: 99;
+  background-color: var(--white-color);
+}
+
+.header__container {
+  padding: 40px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--white-color);
+}
+
+.header__logo {
+  font-size: 23px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.header__logo-accent {
+  color: var(--accent-color);
+}
+
+.header__nav {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.header__item {
+}
+
+.header__link {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header__link:hover {
+  color: var(--accent-color);
+}
+
+.header__link.active {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header__burger-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__burger-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.header__burger-menu {
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 96;
+  transition: transform 0.3s ease-in-out;
+  background-color: var(--white-color);
+  max-width: 512px;
+  width: 100%;
+}
+
+.header__burger-menu.active {
+  transform: translateX(0);
+}
+
+.header__burger-nav {
+  padding: 130.09px 24px 24px;
+}
+
+.header__burger-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.header__burger-item {
+}
+
+.header__burger-link {
+  font-size: 22px;
+}
+
+.header__burger-link.active {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 999px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    padding: 24px 16px;
+  }
+
+  .header__logo {
+    font-size: 20px;
+  }
+
+  .header__burger-nav {
+    padding: 98.09px 16px 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__burger-nav {
+    padding: 90px 16px 24px;
+  }
+}

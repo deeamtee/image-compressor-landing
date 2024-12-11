@@ -1,0 +1,24 @@
+.install-button-additional {
+  padding: 17px 24px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.install-button-additional:hover {
+  color: var(--white-color);
+}
+
+.install-button-additional.footer {
+  padding: 12px 24px;
+}
+
+@media screen and (max-width: 999px) {
+  .install-button-additional {
+    display: none;
+  }
+}

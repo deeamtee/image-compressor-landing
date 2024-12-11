@@ -1,0 +1,11 @@
+.flag {
+  width: 34px;
+  height: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  .flag {
+    width: 23px;
+    height: 17px;
+  }
+}

@@ -1,0 +1,44 @@
+.install-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: max-content;
+
+  padding: 12px 24px;
+  background-color: var(--white-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  color: var(--accent-color);
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  grid-area: button;
+}
+
+.install-button:hover {
+  color: var(--accent-color);
+}
+
+.install-button.brief {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.install-button.brief:hover {
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 1240px) {
+  .install-button.header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .install-button.brief {
+    font-size: 12px;
+  }
+}
