@@ -21,11 +21,11 @@ const Header = () => {
       title: t("nav.main"),
       url: "/home",
     },
-    {
-      id: 2,
-      title: t("nav.help"),
-      url: "/help",
-    },
+    // {
+    //   id: 2,
+    //   title: t("nav.help"),
+    //   url: "/help",
+    // },
     {
       id: 3,
       title: t("nav.contact-us"),

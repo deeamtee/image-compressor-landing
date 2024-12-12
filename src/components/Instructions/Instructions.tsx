@@ -3,9 +3,11 @@ import image1 from "../../assets/images/instruction-image-1.png";
 import image2 from "../../assets/images/instruction-image-2.png";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { useConfetti } from "../../hooks/useConfetti";
 
 const Instructions = () => {
   const { t } = useTranslation();
+  useConfetti();
 
   return (
     <section className={styles.instructions}>
@@ -33,13 +35,13 @@ const Instructions = () => {
               </span>
               .
             </h3>
-            <img className={styles[`instructions__item-image`]} src={image1} />
+            <img alt="Installation illustration" className={styles[`instructions__item-image`]} src={image1} />
           </div>
           <div className={styles.instructions__item}>
             <h3 className={styles[`instructions__item-title`]}>
               {t("instructions.paragraphTwo")}
             </h3>
-            <img className={styles[`instructions__item-image`]} src={image2} />
+            <img alt="Instructions for use" className={styles[`instructions__item-image`]} src={image2} />
           </div>
         </div>
       </motion.div>

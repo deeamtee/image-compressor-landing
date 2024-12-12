@@ -1,13 +1,7 @@
-import { Navigate, Route, Routes } from "react-router";
-import Header from "./components/Header/Header";
-import Brief from "./components/Brief/Brief";
-import Help from "./components/Help/Help";
-import ContactUs from "./components/ContactUs/ContactUs";
-import Instructions from "./components/Instructions/Instructions";
-import Footer from "./components/Footer/Footer";
-import Scrollbars from "rc-scrollbars";
-import Sorry from "./components/Sorry/Sorry";
 import { useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router";
+import { Header, Footer, Brief, Help, ContactUs, Instructions, Sorry } from "./components";
+import Scrollbars from "rc-scrollbars";
 
 function App() {
   const [isScrolling, setIsScrolling] = useState(false);
