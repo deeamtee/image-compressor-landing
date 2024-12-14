@@ -1,38 +1,26 @@
-import { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router";
-import { Header, Footer, Brief, Help, ContactUs, Instructions, Sorry } from "./components";
+import {
+  Header,
+  Footer,
+  Brief,
+  Help,
+  ContactUs,
+  Instructions,
+  Sorry,
+} from "./components";
 import Scrollbars from "rc-scrollbars";
+import styles from "./App.module.css";
 
 function App() {
-  const [isScrolling, setIsScrolling] = useState(false);
-
-  useEffect(() => {
-    if (isScrolling) {
-      const timeout = setTimeout(() => setIsScrolling(false), 1000); // Скрыть через 1 секунду бездействия
-      return () => clearTimeout(timeout);
-    }
-  }, [isScrolling]);
-
-  const handleScroll = () => {
-    setIsScrolling(true);
-  };
-
   return (
     <Scrollbars
       style={{ height: "100vh" }}
-      onScroll={handleScroll}
-      renderThumbVertical={({ style, ...props }) => (
-        <div
-          {...props}
-          style={{
-            ...style,
-            backgroundColor: "gray",
-            opacity: isScrolling ? 1 : 0,
-            transition: "opacity 0.3s ease",
-            borderRadius: "4px",
-          }}
-        />
-      )}
+      classes={{
+        trackVertical: styles.trackVertical,
+        thumbVertical: styles.thumbVertical,
+      }}
+      autoHide
+      autoHideTimeout={1000}
     >
       <div className="App">
         <Header />
