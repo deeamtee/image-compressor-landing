@@ -4,7 +4,7 @@
 }
 
 .thumbVertical {
-  background-color: var(--secondary-color) !important;
+  background-color: rgb(145, 145, 145) !important;
   border-radius: 2px !important;
   width: 5px !important;
 }
