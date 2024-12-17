@@ -13,15 +13,11 @@ const Footer = () => {
   const isMainPage = location.pathname === "/home";
 
   return (
-    <footer
-      id="footer"
-      className={clsx(styles.footer, !isMainPage && styles.visible)}
-    >
+    <footer id="footer" className={clsx(styles.footer, !isMainPage && styles.visible)}>
       <div className={styles.footer__container}>
         <div className={styles.footer__left}>
           <h2 className={styles.footer__logo}>
-            Image{" "}
-            <span className={styles[`footer__logo-accent`]}>Compressor</span>
+            Image <span className={styles[`footer__logo-accent`]}>Compressor</span>
           </h2>
           <p className={styles.footer__text}>
             {t("footer.contact")}{" "}
@@ -31,8 +27,8 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.footer__right}>
-          <InstallButtonAdditional variant={"footer"} />
-          <LanguageSelector variant={"footer"} />
+          <InstallButtonAdditional variant="footer" />
+          <LanguageSelector variant="footer" />
         </div>
       </div>
     </footer>

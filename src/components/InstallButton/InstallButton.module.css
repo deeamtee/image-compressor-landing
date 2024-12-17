@@ -16,12 +16,12 @@
   cursor: pointer;
 
   grid-area: button;
-  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .install-button:hover {
   color: var(--accent-color);
-  opacity: 60%;
+  opacity: 80%;
 }
 
 .install-button.brief {

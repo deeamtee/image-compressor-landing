@@ -22,7 +22,7 @@ const Brief = () => {
           </h2>
 
           <p className={styles[`brief__text`]}>{t("brief.text")}</p>
-          <InstallButton variant={"brief"} />
+          <InstallButton variant="brief" />
         </div>
       </motion.div>
     </section>
