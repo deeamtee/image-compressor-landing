@@ -25,9 +25,28 @@ const LanguageSelector = ({ variant }: { variant: string }) => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+  const handleClickOutside = (event: MouseEvent) => {
+    const lngSelectorContainer = document.getElementById(
+      "language-selector-container"
+    );
+
+    if (!lngSelectorContainer?.contains(event.target as Node)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  });
 
   return (
-    <div className={styles[`language-selector__container`]}>
+    <div
+      className={styles[`language-selector__container`]}
+      id="language-selector-container"
+    >
       <button
         className={clsx(styles[`language-selector`], styles[variant])}
         onClick={toggleDropdown}
